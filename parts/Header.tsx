@@ -28,18 +28,20 @@ export default function Header() {
           <h3 className="text-sm md:text-base font-medium text-gray-500">
             @alizul01
           </h3>
-          <p>I&apos;m a <span className="underline decoration-red-300">front-end web developer</span> and content creator. Currently studying <span className="underline decoration-blue-600">Computer Science at State Polytechnic of Malang.</span></p>
         </div>
         <div className="flex flex-row md:flex-col justify-between  md:justify-start items-start md:items-end gap-2">
-          <div className="w-auto flex flex-row gap-5">
+          <div className="w-auto flex flex-row gap-3 md:gap-4">
             {socialMediaData.map((item) => (
               <div key={item.name}>
                 <SocialMedia name={item.name} icon={item.icon} url={item.url} />
               </div>
             ))}
           </div>
-          <div>
-            <Link href="/resume" className="cursor-pointer text-sm md:text-base font-semibold flex flex-row gap-2 items-center">
+          <div id="resume">
+            <Link
+              href="/resume"
+              className="cursor-pointer text-sm md:text-base font-semibold flex flex-row gap-2 items-center"
+            >
               Resume <BsBoxArrowUpRight className="text-xs" />
             </Link>
           </div>

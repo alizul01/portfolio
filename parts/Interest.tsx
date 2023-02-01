@@ -1,11 +1,25 @@
 import React from "react";
-import { HiOutlineCode } from 'react-icons/hi';
+import { INTEREST } from "@/types/InterestedTypes";
+import InterestItem from "../components/InterestItem";
 
-export default function Interest() {
+const Interest: React.FC = () => {
   return (
-    <div className="flex justify-around items-center gap-4 bg-purple-700 text-purple-200 rounded-md w-fit px-2 py-2 mt-5 hover:scale-95 transition-all duration-30 cursor-pointer">
-      <HiOutlineCode />
-      <h2 className="text-sm md:text-base font-medium">Frontend Developer</h2>
+    <div className="mx-6">
+      <h1 className="heading decoration-emerald-700 hover:decoration-emerald-500">
+        My Interest
+      </h1>
+      <div className="flex flex-row flex-wrap gap-3">
+        {INTEREST.map((item) => (
+          <InterestItem
+            color={item.color}
+            icon={item.icon}
+            title={item.title}
+            key={item.title}
+          />
+        ))}
+      </div>
     </div>
   );
-}
+};
+
+export default Interest;

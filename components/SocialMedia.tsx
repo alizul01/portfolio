@@ -7,7 +7,7 @@ const SocialMedia: React.FC<SocialMediaTypes>  = ({icon, url}) => {
   return (
     <div>
       <Link target={"_blank"} href={url}>
-        <span className="rounded-full text-2xl md:text-3xl transition-all duration-300 ease-in-out">
+        <span className="rounded-full text-2xl md:text-3xl transition-all duration-300 ease-in-out text-white hover:text-red-200">
             {icon}
         </span>
       </Link>
