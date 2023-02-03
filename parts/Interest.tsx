@@ -1,6 +1,6 @@
 import React from "react";
 import { INTEREST } from "@/types/InterestedTypes";
-import InterestItem from "../components/InterestItem";
+import InterestItem from "@/components/InterestItem";
 
 const Interest: React.FC = () => {
   return (

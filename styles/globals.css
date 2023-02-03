@@ -7,6 +7,14 @@
   @apply bg-white text-black;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a0aec0;
+}
+
 @layer utilities {
   .heading {
     @apply text-xl md:text-2xl font-bold underline cursor-default mb-3;

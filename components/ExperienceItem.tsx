@@ -3,7 +3,6 @@ import { ExperienceTypes } from "@/types/ExperienceTypes";
 import React from "react";
 
 const ExperienceItem: React.FC<ExperienceTypes> = ({
-  company,
   description,
   icon,
   time,
@@ -26,18 +25,20 @@ const ExperienceItem: React.FC<ExperienceTypes> = ({
           )}
         </h3>
         <div className="flex flex-col md:flex-row gap-2 items-start md:items-center mb-2">
-          <h6 className="text-sm">{company}</h6>
-          <div className="hidden md:block w-0.5 h-0.5 bg-gray-300 rounded-full"></div>
           <time className="text-sm font-normal leading-none text-gray-400">
             {time}
           </time>
         </div>
-        <p className={ "mb-4 text-base font-normal text-gray-500 dark:text-gray-400"}>
+        <p
+          className={
+            "mb-4 text-base font-normal text-gray-300"
+          }
+        >
           <span className={readMore ? "line-clamp-none" : "line-clamp-2"}>
             {description}
           </span>{" "}
           <a
-            className="cursor-pointer text-slate-300 hover:underline"
+            className="cursor-pointer text-slate-400 hover:underline"
             onClick={() => setReadMore(!readMore)}
           >
             {readMore ? "Read Less" : "Read More"}

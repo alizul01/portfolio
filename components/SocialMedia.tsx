@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { AiFillInstagram } from "react-icons/ai";
-import { SocialMediaTypes } from '../types/SocialMediaTypes';
+import { SocialMediaTypes } from '@/types/SocialMediaTypes';
 
 const SocialMedia: React.FC<SocialMediaTypes>  = ({icon, url}) => {
   return (

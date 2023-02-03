@@ -1,22 +1,21 @@
 import React from "react";
 import Image from "next/image";
-import Banner from "@/parts/Banner";
-import { AiFillInstagram } from "react-icons/ai";
+import Banner from "@/components/Banner";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import Link from "next/link";
-import { socialMediaData } from "../types/SocialMediaTypes";
-import SocialMedia from "../components/SocialMedia";
+import { socialMediaData } from "@/types/SocialMediaTypes";
+import SocialMedia from "@/components/SocialMedia";
 
 export default function Header() {
   return (
     <div>
       <div className="relative mb-14 md:mb-20">
         <Image
-          src={"/img/favicon.jpg"}
+          src={"/img/myava.png"}
           alt="Ali Zulfikar"
           width={1080}
           height={1080}
-          className="rounded-full absolute -bottom-10 md:-bottom-14 w-20 md:w-28 mx-4 border-4 border-black"
+          className="rounded-full absolute -bottom-10 md:-bottom-14 w-20 md:w-28 mx-4 border-4 border-black bg-slate-800 flex justify-center items-center"
         />
         <Banner />
       </div>
@@ -40,7 +39,7 @@ export default function Header() {
           <div id="resume">
             <Link
               href="/resume"
-              className="cursor-pointer text-sm md:text-base font-semibold flex flex-row gap-2 items-center"
+              className="cursor-pointer text-sm md:text-base font-semibold flex flex-row gap-2 items-center hover:underline decoration-slate-300"
             >
               Resume <BsBoxArrowUpRight className="text-xs" />
             </Link>
