@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutMe() {
   const [readMore, setReadMore] = React.useState(false);
   return (
-    <div className="mx-6">
+    <section>
       <h1 className="heading decoration-teal-600 underline hover:decoration-teal-300">
         About Me
       </h1>
@@ -26,6 +26,6 @@ export default function AboutMe() {
           {readMore ? "Read Less" : "Read More"}
         </a>
       </p>
-    </div>
+    </section>
   );
 }

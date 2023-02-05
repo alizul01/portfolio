@@ -9,5 +9,10 @@ export const HONORS: HonorType[] = [
         title: "Pekan Ilmiah Mahasiswa Nasional (PIMNAS)",
         description: "Menjadi peserta PIMNAS 2022 di skema PKM VGK (Video Gagasan Konstruktif) adalah salah satu pengalaman yang sangat berharga bagi saya.",
         link: "https://www.linkedin.com"
+    },
+    {
+        title: "Pendanaan Program Wirausaha Mahasiswa (PMW) 2022",
+        description: "",
+        link: ""
     }
 ]

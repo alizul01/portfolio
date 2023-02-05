@@ -3,8 +3,7 @@ import Image from "next/image";
 import Banner from "@/components/Banner";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import Link from "next/link";
-import { socialMediaData } from "@/types/SocialMediaTypes";
-import SocialMedia from "@/components/SocialMedia";
+import { MdVerified } from "react-icons/md";
 
 export default function Header() {
   return (
@@ -21,21 +20,17 @@ export default function Header() {
       </div>
       <div className="mx-6 flex flex-col md:flex-row gap-5 justify-between">
         <div>
-          <h1 className="text-xl md:text-2xl font-bold">
-            Muhammad Ali Zulfikar
-          </h1>
+          <span className="flex flex-row gap-3 justify-start items-center">
+            <h1 className="text-xl md:text-2xl font-bold">
+              Muhammad Ali Zulfikar
+            </h1>
+            <MdVerified className="text-xl text-blue-300" />
+          </span>
           <h3 className="text-sm md:text-base font-medium text-gray-500">
             @alizul01
           </h3>
         </div>
         <div className="flex flex-row md:flex-col justify-between  md:justify-start items-start md:items-end gap-2">
-          <div className="w-auto flex flex-row gap-3 md:gap-4">
-            {socialMediaData.map((item) => (
-              <div key={item.name}>
-                <SocialMedia name={item.name} icon={item.icon} url={item.url} />
-              </div>
-            ))}
-          </div>
           <div id="resume">
             <Link
               href="/resume"

@@ -5,7 +5,7 @@ import ExperienceItem from "@/components/ExperienceItem";
 
 export default function PastExperience() {
   return (
-    <div className="mx-6 flex flex-col gap-6">
+    <section className="flex flex-col gap-6">
       <div className="heading decoration-blue-600 hover:decoration-blue-400">
         Past Experience
       </div>
@@ -35,6 +35,6 @@ export default function PastExperience() {
           ))}
         </ol>
       </div>
-    </div>
+    </section>
   );
 }

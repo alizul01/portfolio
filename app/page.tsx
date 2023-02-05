@@ -7,18 +7,19 @@ import Skills from '@/parts/Skills';
 import Honors from '@/parts/Honors';
 import Project from '@/parts/Project';
 import Featured from '@/parts/Featured'
+import Contact from '@/parts/Contact'
 
 export default function Home() {
   return (
-    <main className='max-w-screen-md mx-auto flex flex-col gap-10'>
+    <main className='max-w-screen-md mx-auto flex flex-col gap-6'>
       <Header />
       <AboutMe />
-      <Featured />
       <Interest />
       <PastExperience />
       <Skills />
       <Honors />
       <Project />
+      <Contact />
       <Footer />
     </main>
   )

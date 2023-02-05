@@ -6,7 +6,7 @@ const ProjectItem: React.FC<ProjectType> = ({ image, link, title }) => {
   const [isHover, setIsHover] = React.useState(false);
   return (
     <div
-      className="w-64 max-h-44 flex relative justify-center items-center rounded-lg overflow-hidden cursor-pointer"
+      className="w-64 h-44 flex relative justify-center items-center rounded-lg overflow-hidden cursor-pointer"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >

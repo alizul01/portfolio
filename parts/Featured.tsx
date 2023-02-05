@@ -5,7 +5,7 @@ import { STORIES } from "../types/StoriesType";
 
 export default function Featured() {
   return (
-    <div className="mx-6">
+    <section>
       <h1 className="heading decoration-rose-600 underline hover:decoration-rose-300">
         Stories
       </h1>
@@ -21,6 +21,6 @@ export default function Featured() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="text-center text-sm font-bold py-5">
+    <div className="text-center text-sm font-bold py-3">
       Powered by{" "}
       <Link
         className="underline decoration-orange-200"

@@ -4,7 +4,7 @@ import InterestItem from "@/components/InterestItem";
 
 const Interest: React.FC = () => {
   return (
-    <div className="mx-6">
+    <section>
       <h1 className="heading decoration-emerald-700 hover:decoration-emerald-500">
         My Interest
       </h1>
@@ -18,7 +18,7 @@ const Interest: React.FC = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

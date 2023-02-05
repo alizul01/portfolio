@@ -5,22 +5,13 @@ import { HonorType } from "@/types/HonorType";
 const HonorsItem: React.FC<HonorType> = ({ title, description, link }) => {
   const [readMore, setReadMore] = React.useState(false);
   return (
-    <div className="max-w-sm p-6 border rounded-lg shadow bg-zinc-800 border-zinc-700 hover:ring-2 hover:ring-zinc-600 transition-all ease-in-out duration-300 cursor-default">
-      <h5 className="mb-2 text-lg font-bold text-white">{title}</h5>
+    <div className="max-w-[20rem] p-4 border rounded-lg shadow bg-zinc-800 border-zinc-700 hover:ring-2 hover:ring-zinc-600 transition-all ease-in-out duration-300 cursor-default justify-center items-start flex flex-col">
+      <h5 className="text-lg font-bold text-white">{title}</h5>
       <div
         className={
           "mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
         }
       >
-        <div className={readMore ? "line-clamp-none" : "line-clamp-2"}>
-          {description}
-        </div>{" "}
-        <p
-          className="cursor-pointer text-slate-300 hover:underline"
-          onClick={() => setReadMore(!readMore)}
-        >
-          {readMore ? "Read Less" : "Read More"}
-        </p>
       </div>
       <Link
         href={link}

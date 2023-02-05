@@ -20,3 +20,9 @@
     @apply text-xl md:text-2xl font-bold underline cursor-default mb-3;
   }
 }
+
+@layer base {
+  section {
+    @apply hover:bg-surface-100 p-6 rounded-md;
+  }
+}
