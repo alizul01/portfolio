@@ -28,7 +28,7 @@ const SkillsItem: React.FC<SkillsTypes> = ({
           <div className="flex flex-col gap-3 mt-3">
             <div
               className={[
-                "w-full p-2 rounded-md flex flex-col gap-4",
+                "w-full p-2 rounded-lg flex flex-col gap-4",
                 backgroundColor,
               ].join(" ")}
             >
@@ -37,7 +37,7 @@ const SkillsItem: React.FC<SkillsTypes> = ({
                   <span
                     key={index}
                     className={[
-                      "p-1 rounded-md items-center flex flex-row gap-2 px-2 py-1 md:px-3 md:py-2 justify-around hover:bg-gray-400 hover:scale-95 transition-all duration-300 ease-in-out",
+                      "p-1 rounded-lg items-center flex flex-row gap-2 px-2 py-1 md:px-3 md:py-2 justify-around hover:bg-gray-400 hover:scale-95 transition-all duration-300 ease-in-out",
                       textBgColor,
                     ].join(" ")}
                   >

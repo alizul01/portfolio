@@ -21,7 +21,7 @@ const StoriesItem: React.FC<StoriesType> = ({name, description, images, alt, lin
             alt={alt}
             width={1080}
             height={1080}
-            className="rounded-md"
+            className="rounded-lg"
           />
         </div>
       </div>

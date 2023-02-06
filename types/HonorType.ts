@@ -14,5 +14,20 @@ export const HONORS: HonorType[] = [
         title: "Pendanaan Program Wirausaha Mahasiswa (PMW) 2022",
         description: "",
         link: ""
+    },
+    {
+        title: "3rd Winner Agridation National Competition Podcast 2022",
+        description: " ",
+        link: " "
+    },
+    {
+        title: "Zenius Speaker: Persiapan Fisik & Mental Menjelang Hari H UTBK",
+        description: " ",
+        link: " "
+    },
+    {
+        title: "1st Winner of Dicoding #Dicoding7thAnniversary Video",
+        description: " ",
+        link: " "
     }
 ]

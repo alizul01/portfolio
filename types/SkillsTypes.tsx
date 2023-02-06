@@ -33,7 +33,7 @@ export type SkillsTypes = {
 export const SKILLS: SkillsTypes[] = [
   {
     icon: <FaLaptopCode />,
-    title: "Full Stack Developer",
+    title: "Developer",
     textBgColor: "bg-blue-500",
     backgroundColor: "bg-blue-800",
     SkillSet: [

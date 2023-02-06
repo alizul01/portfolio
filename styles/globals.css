@@ -23,6 +23,6 @@
 
 @layer base {
   section {
-    @apply hover:bg-surface-100 p-6 rounded-md;
+    @apply hover:bg-surface-100 p-6 rounded-lg;
   }
 }

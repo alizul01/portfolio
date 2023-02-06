@@ -5,11 +5,11 @@ import { PROJECT } from "@/types/ProjectType";
 
 const Project: React.FC = () => {
   return (
-    <div className="mx-6">
+    <section>
       <h1 className="heading underline decoration-lime-600 hover:decoration-lime-400">
         Project
       </h1>
-      <div className="flex flex-col md:flex-row gap-6 md:gap-3 justify-center items-center">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-3 justify-center items-center flex-wrap">
         {PROJECT.map((item, key) => (
           <ProjectItem
             image={item.image}
@@ -19,7 +19,7 @@ const Project: React.FC = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

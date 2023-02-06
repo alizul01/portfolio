@@ -34,7 +34,7 @@ export default function Header() {
           <div id="resume">
             <Link
               href="/resume"
-              className="cursor-pointer text-sm md:text-base font-semibold flex flex-row gap-2 items-center hover:underline decoration-slate-300"
+              className="cursor-pointer text-sm md:text-base font-semibold flex flex-row gap-2 items-center bg-emerald-700 p-3 rounded-full hover:ring-3 hover:ring-emerald-300 focus:ring-3 focus:ring-emerald-300"
             >
               Resume <BsBoxArrowUpRight className="text-xs" />
             </Link>

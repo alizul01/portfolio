@@ -1,14 +1,17 @@
-import '@/styles/globals.css'
+import Navbar from "@/components/Navbar";
+import "@/styles/globals.css";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <head />
-      <body className={['font-mulish bg-black text-white'].join(" ")}>{children}</body>
+      <body className={["font-mulish bg-black text-white"].join(" ")}>
+        {children}
+      </body>
     </html>
-  )
+  );
 }
